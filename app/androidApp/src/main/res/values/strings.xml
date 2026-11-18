@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AllTheDocs</string>
+    <string name="share_to_app">Add to AllTheDocs vault</string>
 </resources>

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.kotlinJvm)
     alias(libs.plugins.ktor)
+    alias(libs.plugins.kotlinSerialization)
 }
 
 group = "com.ashish.allthedocs"
@@ -14,6 +15,16 @@ dependencies {
     implementation(libs.logback)
     implementation(libs.ktor.serverCore)
     implementation(libs.ktor.serverNetty)
+    implementation(libs.ktor.serverContentNegotiation)
+    implementation(libs.ktor.serverStatusPages)
+    implementation(libs.ktor.serializationKotlinxJson)
+    implementation(libs.ktor.clientCore)
+    implementation(libs.ktor.clientCio)
+    implementation(libs.ktor.clientContentNegotiation)
+    implementation(libs.pdfbox)
+    implementation(libs.bouncycastle.bcpkix)
     testImplementation(libs.ktor.serverTestHost)
+    testImplementation(libs.ktor.clientMock)
+    testImplementation(libs.kotlinx.coroutinesTest)
     testImplementation(libs.kotlin.testJunit)
 }
